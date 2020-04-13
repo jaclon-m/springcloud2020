@@ -43,7 +43,7 @@ public class PaymentController {
         }
     }
 
-    @GetMapping(value = "/payment/feign/timeout ")
+    @GetMapping(value = "/payment/feign/timeout")
     public String paymentFeignTimeout(){
         try {
             // 暂停3秒钟
