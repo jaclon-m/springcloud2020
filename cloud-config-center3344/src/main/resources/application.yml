@@ -10,16 +10,16 @@ spring:
         git:
           #uri: git@github.com:jaclon-m/springcloud-config.git
           uri: https://github.com/jaclon-m/springcloud-config.git
-          search-paths:
-          - spring-config
           username: jaclon_m
           password: f123y@ds
+          search-paths:
+            - spring-config
       label: master
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: guest
-  password: guest
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 
 eureka:
