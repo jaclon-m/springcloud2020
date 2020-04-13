@@ -8,9 +8,12 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:jaclon-m/springcloud-config.git
+          #uri: git@github.com:jaclon-m/springcloud-config.git
+          uri: https://github.com/jaclon-m/springcloud-config.git
           search-paths:
           - spring-config
+          username: jaclon_m
+          password: f123y@ds
       label: master
 rabbitmq:
   host: localhost
