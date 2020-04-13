@@ -32,5 +32,14 @@ public class OrderController {
         return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 
-
+    /**
+     * 链路跟踪 zipkin+sleuth
+     * http://localhost/consumer/payment/zipkin
+     *
+     * @return
+     */
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin() {
+        return restTemplate.getForObject("http://localhost:8001/payment/zipkin/", String.class);
+    }
 }
