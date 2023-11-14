@@ -32,6 +32,8 @@
         <module>cloudalibaba-sentinel-server8401</module>
         <module>cloudalibaba-provider-payment9003</module>
         <module>cloudalibaba-provider-payment9004</module>
+        <module>cloud-auth-service9001</module>
+        <module>cloud-resource-service9002</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -119,7 +121,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <fork>true</fork>
+                    <!--<fork>true</fork>-->
                     <addResources>true</addResources>
                 </configuration>
             </plugin>
